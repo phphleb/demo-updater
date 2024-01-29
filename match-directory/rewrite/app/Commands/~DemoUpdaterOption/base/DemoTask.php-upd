@@ -1,0 +1,47 @@
+<?php
+declare(strict_types=1);
+
+namespace App\Commands\DemoUpdaterOption;
+
+use Hleb\Base\Task;
+use Phphleb\DemoUpdater\DemoLogic\DeploymentManager;
+
+/**
+ * This class implements a demo command to infer a setting
+ * from the configuration of the deployed demo bean.
+ * You can find this command when the class is added in the list
+ * of console commands as `demo-updater-option/demo-task`.
+ *
+ * Этот класс реализует демонстрационную команду для вывода параметра
+ * из конфигурации развертываемого демонстрационного компонента.
+ * Вы можете найти эту команду, когда класс добавлен, в списке
+ * консольных команд как `demo-updater-option/demo-task`.
+ */
+class DemoTask extends Task
+{
+    /**
+     * Displays the current design type for the demo component.
+     *
+     * Вывод текущего типа дизайна для демонстрационного компонента.
+     */
+    protected function run(): int
+    {
+        try {
+            $design = DeploymentManager::getDesign();
+            if (!$design) {
+                echo 'Configuration parameter not found.' . PHP_EOL;
+                return self::ERROR_CODE;
+            }
+            $this->setResult($design);
+            echo $design . PHP_EOL;
+
+        } catch (\JsonException|\DomainException $e) {
+            $this->setResult($e->getMessage());
+            echo $e->getMessage() . PHP_EOL;
+
+            return self::ERROR_CODE;
+        }
+
+        return self::SUCCESS_CODE;
+    }
+}

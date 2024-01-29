@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/demo-updater-design/dark-design/demo.css"/>
+</head>
+    <body>
+    <!--
+     Sample output of the template with `dark` design, here can be any HTML, depending on the type of design.
+
+     Демонстрационный вывод шаблона c дизайном `dark`, здесь может быть любой HTML, зависящий от типа дизайна.
+    -->
+        <h1>DARK</h1>
+        <hr>
+        <p>Demonstration of changeable website design.</p>
+    </body>
+</html>

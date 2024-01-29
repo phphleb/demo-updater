@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/demo-updater-design/light-design/demo.css"/>
+</head>
+    <body>
+    <!--
+     Sample output of the template with `light` design, here can be any HTML, depending on the type of design.
+
+     Демонстрационный вывод шаблона c дизайном `light`, здесь может быть любой HTML, зависящий от типа дизайна.
+    -->
+        <h1>LIGHT</h1>
+        <hr>
+        <p>Demonstration of changeable website design.</p>
+    </body>
+</html>

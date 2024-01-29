@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/demo-updater-design/base-design/demo.css"/>
+</head>
+    <body>
+    <!--
+     Sample output of the template with `base` design, here can be any HTML, depending on the type of design.
+
+     Демонстрационный вывод шаблона c дизайном `base`, здесь может быть любой HTML, зависящий от типа дизайна.
+    -->
+        <h1>BASE</h1>
+        <hr>
+        <p>Demonstration of changeable website design.</p>
+    </body>
+</html>

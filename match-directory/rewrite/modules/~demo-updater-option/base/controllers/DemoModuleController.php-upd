@@ -1,0 +1,23 @@
+<?php
+namespace Modules\DemoUpdaterOption\Controllers;
+
+use App\Commands\DemoUpdaterOption\DemoTask;
+
+/**
+ * Demo module controller.
+ * Displays information about the current design type from the configuration.
+ *
+ * Демонстрационный контроллер модуля.
+ * Выводит информацию о текущем типе дизайна из конфигурации.
+ */
+class DemoModuleController
+{
+   public function index(): string
+   {
+       $task = new DemoTask();
+       $task->call();
+       $param = strtoupper($task->getResult());
+
+       return 'Success! ' . __CLASS__ . " outputs the `$param` parameter.";
+   }
+}

@@ -1,0 +1,9 @@
+<?php
+/**
+ * Output of a demo page with a changeable design according to the established one.
+ *
+ * Вывод демонстрационной страницы со сменным дизайном согласно установленному.
+ */
+Route::get('/demo-page/', view('demo-updater-design/index'));
+
+Route::get('/demo-controller/')->module('demo-updater-option', 'DemoModuleController');

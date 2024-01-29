@@ -1,0 +1,26 @@
+{
+  "name": "phphleb/demo-updater",
+  "description": "Demo auto-update resources in the HLEB2 framework",
+  "type": "library",
+  "homepage": "https://hleb2framework.ru",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Foma Tuturov",
+      "email": "fomiash@yandex.ru"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "exclude-from-classmap": ["/match-directory/"],
+    "psr-4": {
+      "Phphleb\\DemoUpdater\\": "/"
+    }
+  },
+  "require": {
+    "php": ">=8.2.0"
+  },
+  "minimum-stability": "dev"
+}

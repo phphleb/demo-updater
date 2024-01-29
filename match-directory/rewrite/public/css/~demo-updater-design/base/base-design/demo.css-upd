@@ -1,0 +1,7 @@
+body {
+    background-color: #e7e6e6;
+    color: #696868;
+}
+h1 {
+    color: #3e8c61;
+}

@@ -1,0 +1,18 @@
+{
+  "component": "phphleb/demo-updater",
+  "name": "Demo component",
+  "description": "Demo adding/rolling back resources to the project.",
+  "directory": "match-directory",
+  "settings": {
+    "demo-updater-design": {
+       "name": "design",
+       "default": "base",
+       "select": ["base", "dark", "light"]
+     },
+    "demo-updater-option": {
+      "name": "single option",
+      "default": "base",
+      "select": ["base"]
+    }
+  }
+}
