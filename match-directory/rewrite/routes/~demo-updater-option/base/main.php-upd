@@ -4,6 +4,9 @@
  *
  * Вывод демонстрационной страницы со сменным дизайном согласно установленному.
  */
+
+use Modules\DemoUpdaterOption\Controllers\DemoModuleController;
+
 Route::get('/demo-page/', view('demo-updater-design/index'));
 
-Route::get('/demo-controller/')->module('demo-updater-option', 'DemoModuleController');
+Route::get('/demo-controller/')->module('demo-updater-option', DemoModuleController::class);
